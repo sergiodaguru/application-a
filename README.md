@@ -36,3 +36,4 @@ This app was created using the [Express application generator][expressgen].
 [expressgen]: https://expressjs.com/en/starter/generator.html
 
 # application-a
+# application-b
