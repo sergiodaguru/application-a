@@ -7,10 +7,10 @@ let counter = 0;
 router.get('/messages', function(req, res, next) {
     let i
      for (i = 0; i < 50; i++) {
-        text += "The number is " + i + "<br>";
+        text += "<br>The number is " + i + "<br>";
         console.log(text);
      }
-     res.send({ "Sent Messages": i });
+     res.send("<p>Sent 50 log Messages.</p>");
 });
 
 module.exports = router;
