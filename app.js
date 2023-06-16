@@ -5,6 +5,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var greetingRouter = require('./routes/greeting');
+var messagesRouter = require('./routes/messages');
 
 var app = express();
 
@@ -15,6 +16,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/greeting', greetingRouter);
+app.use(greetingRouter);
+app.use(messagesRouter);
 
 module.exports = app;
