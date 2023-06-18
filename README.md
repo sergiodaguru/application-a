@@ -9,11 +9,11 @@ To run:
     npm install
     npm start
 
-The app will now start on <http://localhost:3000>
+The app will now start on <http://localhost:8080>
 
-If you hit <http://localhost:3000/greeting> you'll get a greeting:
+If you hit <http://localhost:8080/greeting> you'll get a greeting:
 
-    $ curl localhost:3000/greeting
+    $ curl localhost:8080/greeting
     {"greeting":"Hello, world!"}
 
 ## Put it in a container
@@ -26,7 +26,7 @@ Now start a container from the image:
 
     docker run --network=host node-hello-world
 
-You'll be able to access the API at <http://localhost:3000/greeting>.
+You'll be able to access the API at <http://localhost:8080/greeting>.
 
 ## Acknowledgements
 

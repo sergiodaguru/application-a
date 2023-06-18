@@ -12,7 +12,7 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 8080
 
 # command to run on container start
 CMD [ "node", "./bin/www" ]
